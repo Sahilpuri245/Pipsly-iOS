@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="ZKu-Zp-78v" customClass="SignupNameCell" customModule="Pipsly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZKu-Zp-78v" id="18S-sQ-29h">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVE-ZH-1E1">
+                        <rect key="frame" x="0.0" y="14" width="335" height="50"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="w1C-rs-pml">
+                                <rect key="frame" x="1" y="1" width="285" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.015686274509803921" green="0.80784313725490198" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="ZKu-Zp-78v" id="m9w-2N-LTi"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tee-Ip-d48">
+                                <rect key="frame" x="286" y="1" width="48" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="8sZ-JD-U0o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="11"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapFieldsActionButton:" destination="ZKu-Zp-78v" eventType="touchUpInside" id="fv8-0J-YXC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tee-Ip-d48" secondAttribute="trailing" constant="1" id="9dt-s7-PIO"/>
+                            <constraint firstAttribute="height" constant="50" id="B8R-85-S0b"/>
+                            <constraint firstAttribute="bottom" secondItem="w1C-rs-pml" secondAttribute="bottom" constant="1" id="ExD-9i-LRH"/>
+                            <constraint firstItem="w1C-rs-pml" firstAttribute="top" secondItem="aVE-ZH-1E1" secondAttribute="top" constant="1" id="R18-2X-Krb"/>
+                            <constraint firstItem="tee-Ip-d48" firstAttribute="top" secondItem="aVE-ZH-1E1" secondAttribute="top" constant="1" id="b6t-kZ-0iw"/>
+                            <constraint firstItem="tee-Ip-d48" firstAttribute="leading" secondItem="w1C-rs-pml" secondAttribute="trailing" id="jyt-an-cf5"/>
+                            <constraint firstItem="w1C-rs-pml" firstAttribute="leading" secondItem="aVE-ZH-1E1" secondAttribute="leading" constant="1" id="n1o-ER-yJQ"/>
+                            <constraint firstAttribute="bottom" secondItem="tee-Ip-d48" secondAttribute="bottom" constant="1" id="yhD-ZI-svO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQS-rt-gDd" customClass="PaddingLabel" customModule="Pipsly" customModuleProvider="target">
+                        <rect key="frame" x="310" y="4" width="10" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Eku-WZ-qzN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password must atleast have 8 characters, 1 uppercase and 1 numeric." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZO-qp-beC">
+                        <rect key="frame" x="0.0" y="70" width="335" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Z8h-iO-zPQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sQS-rt-gDd" firstAttribute="top" secondItem="aVE-ZH-1E1" secondAttribute="top" constant="-10" id="2dY-dw-nID"/>
+                    <constraint firstAttribute="trailing" secondItem="aVE-ZH-1E1" secondAttribute="trailing" id="7mD-e4-mse"/>
+                    <constraint firstItem="sQS-rt-gDd" firstAttribute="trailing" secondItem="aVE-ZH-1E1" secondAttribute="trailing" constant="-15" id="Bwa-kL-ci0"/>
+                    <constraint firstItem="aVE-ZH-1E1" firstAttribute="top" secondItem="18S-sQ-29h" secondAttribute="top" constant="14" id="Hom-2K-ndl"/>
+                    <constraint firstItem="7ZO-qp-beC" firstAttribute="leading" secondItem="18S-sQ-29h" secondAttribute="leading" id="Moi-1E-7VE"/>
+                    <constraint firstItem="7ZO-qp-beC" firstAttribute="top" secondItem="aVE-ZH-1E1" secondAttribute="bottom" constant="6" id="hwb-9Y-0qA"/>
+                    <constraint firstAttribute="trailing" secondItem="7ZO-qp-beC" secondAttribute="trailing" id="oBF-51-sk9"/>
+                    <constraint firstItem="aVE-ZH-1E1" firstAttribute="leading" secondItem="18S-sQ-29h" secondAttribute="leading" id="slR-4s-okO"/>
+                    <constraint firstItem="sQS-rt-gDd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="18S-sQ-29h" secondAttribute="leading" constant="15" id="woR-Af-9X1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="v8x-YO-1Of"/>
+            <connections>
+                <outlet property="btnShow" destination="tee-Ip-d48" id="CD1-Wu-ETP"/>
+                <outlet property="lblErrorMsg" destination="sQS-rt-gDd" id="fHV-DJ-5hQ"/>
+                <outlet property="lblHelpmsg" destination="7ZO-qp-beC" id="fgl-I7-OpL"/>
+                <outlet property="txtName" destination="w1C-rs-pml" id="z8U-N7-jKz"/>
+                <outlet property="viewBorder" destination="aVE-ZH-1E1" id="yPc-uU-sTH"/>
+                <outlet property="widthConstraint" destination="8sZ-JD-U0o" id="FK1-6k-F9a"/>
+            </connections>
+            <point key="canvasLocation" x="90.5" y="98.5"/>
+        </tableViewCell>
+    </objects>
+</document>

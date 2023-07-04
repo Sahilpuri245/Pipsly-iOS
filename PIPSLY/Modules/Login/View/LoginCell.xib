@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LoginCell" customModule="Pipsly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="de8-ax-pgI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQi-89-ISg">
+                                <rect key="frame" x="0.0" y="125" width="375" height="360"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Kud-RJ-7uo">
+                                        <rect key="frame" x="162" y="0.0" width="51" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="1nr-Nx-mka"/>
+                                            <constraint firstAttribute="width" constant="51" id="WMK-Rj-p2m"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gNY-Mw-COo">
+                                        <rect key="frame" x="16" y="90" width="343" height="54"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Pipsly." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxI-NJ-WO3">
+                                                <rect key="frame" x="87.5" y="0.0" width="168" height="18"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="r9w-w4-9g8">
+                                                <rect key="frame" x="22.5" y="23" width="298" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where the Buyers, Brands &amp; the Businesses " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnM-W7-Bft">
+                                                        <rect key="frame" x="0.0" y="0.0" width="298" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="connect." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wex-7s-F4A">
+                                                        <rect key="frame" x="0.0" y="17" width="298" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="feV-g4-oEz"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnP-dj-js1">
+                                        <rect key="frame" x="20" y="159" width="335" height="135"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o9G-Ey-V8e">
+                                                <rect key="frame" x="0.0" y="20" width="335" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="0.015686274510000001" green="0.80784313730000001" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="WUj-pe-hI4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="gTV-IL-0wX" id="1hr-ID-mxf"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox1-2y-QfQ" customClass="PaddingLabel" customModule="Pipsly" customModuleProvider="target">
+                                                <rect key="frame" x="320" y="10" width="0.0" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="f8t-dZ-v72"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pwc-Mz-ejP">
+                                                <rect key="frame" x="0.0" y="85" width="335" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="0.015686274510000001" green="0.80784313730000001" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="sCH-4W-T12"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="gTV-IL-0wX" id="1wg-z7-OAF"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yco-r3-LeV" customClass="PaddingLabel" customModule="Pipsly" customModuleProvider="target">
+                                                <rect key="frame" x="320" y="75" width="0.0" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="0Ye-My-07Y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Pwc-Mz-ejP" firstAttribute="top" secondItem="o9G-Ey-V8e" secondAttribute="bottom" constant="15" id="AaZ-6k-wVi"/>
+                                            <constraint firstAttribute="height" constant="135" id="IBY-yt-n58"/>
+                                            <constraint firstItem="Ox1-2y-QfQ" firstAttribute="top" secondItem="cnP-dj-js1" secondAttribute="top" constant="10" id="PDa-1A-yzp"/>
+                                            <constraint firstItem="o9G-Ey-V8e" firstAttribute="top" secondItem="cnP-dj-js1" secondAttribute="top" constant="20" id="Pzo-VJ-G8t"/>
+                                            <constraint firstItem="yco-r3-LeV" firstAttribute="top" secondItem="o9G-Ey-V8e" secondAttribute="bottom" constant="5" id="ar4-Jq-ZKJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="o9G-Ey-V8e" secondAttribute="trailing" id="foS-A6-c06"/>
+                                            <constraint firstItem="yco-r3-LeV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cnP-dj-js1" secondAttribute="leading" constant="15" id="gia-3A-O8h"/>
+                                            <constraint firstItem="Pwc-Mz-ejP" firstAttribute="leading" secondItem="cnP-dj-js1" secondAttribute="leading" id="hAT-0Z-qiE"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ox1-2y-QfQ" secondAttribute="trailing" constant="15" id="hDg-ZC-Ky4"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pwc-Mz-ejP" secondAttribute="trailing" id="jKm-e0-jdT"/>
+                                            <constraint firstItem="o9G-Ey-V8e" firstAttribute="leading" secondItem="cnP-dj-js1" secondAttribute="leading" id="lyz-f5-1nx"/>
+                                            <constraint firstAttribute="trailing" secondItem="yco-r3-LeV" secondAttribute="trailing" constant="15" id="otP-pk-M6U"/>
+                                            <constraint firstItem="Ox1-2y-QfQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cnP-dj-js1" secondAttribute="leading" constant="15" id="yNk-sh-906"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="loC-Aj-pUP">
+                                        <rect key="frame" x="128.5" y="323" width="117" height="37"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rre-Qp-5oL">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="37"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="25"/>
+                                                <state key="normal" title="Sign in"/>
+                                                <connections>
+                                                    <action selector="tapSignIn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="jqu-Dy-A8t"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconWhiteSignin" translatesAutoresizingMaskIntoConstraints="NO" id="Izm-bz-aPQ">
+                                                <rect key="frame" x="96" y="0.0" width="21" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="loC-Aj-pUP" secondAttribute="bottom" id="38M-ZR-CWs"/>
+                                    <constraint firstAttribute="height" constant="360" id="6Wg-Mp-NJ8"/>
+                                    <constraint firstItem="cnP-dj-js1" firstAttribute="leading" secondItem="WQi-89-ISg" secondAttribute="leading" constant="20" id="BZK-Vl-Oqj"/>
+                                    <constraint firstItem="Kud-RJ-7uo" firstAttribute="top" secondItem="WQi-89-ISg" secondAttribute="top" id="JS7-bl-yuj"/>
+                                    <constraint firstItem="cnP-dj-js1" firstAttribute="top" secondItem="gNY-Mw-COo" secondAttribute="bottom" constant="15" id="Uts-7i-CeA"/>
+                                    <constraint firstItem="Kud-RJ-7uo" firstAttribute="centerX" secondItem="WQi-89-ISg" secondAttribute="centerX" id="XTf-ts-WgY"/>
+                                    <constraint firstAttribute="trailing" secondItem="cnP-dj-js1" secondAttribute="trailing" constant="20" id="lPx-z2-ZpC"/>
+                                    <constraint firstItem="gNY-Mw-COo" firstAttribute="top" secondItem="Kud-RJ-7uo" secondAttribute="bottom" constant="25" id="qVA-bX-dpw"/>
+                                    <constraint firstItem="gNY-Mw-COo" firstAttribute="leading" secondItem="WQi-89-ISg" secondAttribute="leading" constant="16" id="tdC-Oj-dUZ"/>
+                                    <constraint firstItem="loC-Aj-pUP" firstAttribute="centerX" secondItem="WQi-89-ISg" secondAttribute="centerX" id="vee-RJ-6ZA"/>
+                                    <constraint firstAttribute="trailing" secondItem="gNY-Mw-COo" secondAttribute="trailing" constant="16" id="ygP-Aq-TrR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmJ-C8-5Mx">
+                                <rect key="frame" x="85" y="597" width="206" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="VIg-wX-4ej"/>
+                                    <constraint firstAttribute="width" constant="206" id="ekY-ZD-lR2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="11"/>
+                                <state key="normal" title="CREATE A PIPSLY ACCOUNT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapSignUp:" destination="gTV-IL-0wX" eventType="touchUpInside" id="chw-9B-dfX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WQi-89-ISg" firstAttribute="centerY" secondItem="de8-ax-pgI" secondAttribute="centerY" constant="-28.5" id="1b5-8q-T1h"/>
+                            <constraint firstAttribute="bottom" secondItem="dmJ-C8-5Mx" secondAttribute="bottom" constant="34" id="ERe-tL-i0x"/>
+                            <constraint firstItem="WQi-89-ISg" firstAttribute="centerX" secondItem="de8-ax-pgI" secondAttribute="centerX" id="Vrk-zW-v21"/>
+                            <constraint firstItem="WQi-89-ISg" firstAttribute="leading" secondItem="de8-ax-pgI" secondAttribute="leading" id="f4J-fr-GPx"/>
+                            <constraint firstAttribute="trailing" secondItem="WQi-89-ISg" secondAttribute="trailing" id="lw8-oa-Z9k"/>
+                            <constraint firstItem="dmJ-C8-5Mx" firstAttribute="centerX" secondItem="de8-ax-pgI" secondAttribute="centerX" id="y6A-gV-3JU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="de8-ax-pgI" secondAttribute="trailing" id="Jw7-p6-atb"/>
+                <constraint firstItem="de8-ax-pgI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rik-u8-wsC"/>
+                <constraint firstAttribute="bottom" secondItem="de8-ax-pgI" secondAttribute="bottom" id="Y9M-40-TqP"/>
+                <constraint firstItem="de8-ax-pgI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xJe-SG-o6h"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="242" height="281"/>
+            <connections>
+                <outlet property="lblEmailError" destination="Ox1-2y-QfQ" id="3jr-ML-KUK"/>
+                <outlet property="lblPasswordError" destination="yco-r3-LeV" id="2gC-kE-DgY"/>
+                <outlet property="txtEmail" destination="o9G-Ey-V8e" id="rfT-XC-8G4"/>
+                <outlet property="txtPassword" destination="Pwc-Mz-ejP" id="PHi-NI-nuI"/>
+            </connections>
+            <point key="canvasLocation" x="128.5" y="306.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconWhiteSignin" width="21" height="14"/>
+        <image name="logo" width="109" height="141"/>
+    </resources>
+</document>

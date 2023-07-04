@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UserTypeCell" customModule="Pipsly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Q8-u6i">
+                        <rect key="frame" x="5" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="Sqw-da-Eaf"/>
+                            <constraint firstAttribute="height" constant="44" id="q03-mq-oAp"/>
+                        </constraints>
+                        <state key="normal" image="iconBackWhite"/>
+                        <connections>
+                            <action selector="tapBack:" destination="gTV-IL-0wX" eventType="touchUpInside" id="42e-gn-uwc"/>
+                        </connections>
+                    </button>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osg-Ij-oDp">
+                        <rect key="frame" x="20" y="44" width="335" height="623"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80o-f7-N0R">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="623"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0WL-gm-7R7">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swZ-jt-Gnm">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before we start the onboarding, please let us know who do you wish to sign up as?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBb-12-LFa">
+                                                <rect key="frame" x="0.0" y="32" width="335" height="30"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TA4-hI-1bO">
+                                        <rect key="frame" x="0.0" y="102" width="335" height="375"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kS8-ZS-vEK">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="115"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cTs-T1-Vkk">
+                                                        <rect key="frame" x="15" y="20" width="305" height="75"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="HMd-ij-2EO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="305" height="20"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A BUYER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fI-if-bp7">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="13"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkWhiteSelect" translatesAutoresizingMaskIntoConstraints="NO" id="K3A-Od-Pcz">
+                                                                        <rect key="frame" x="285" y="0.0" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="s7R-sl-cFu"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="K3A-Od-Pcz" secondAttribute="trailing" id="0f6-V6-JjR"/>
+                                                                    <constraint firstItem="K3A-Od-Pcz" firstAttribute="top" secondItem="HMd-ij-2EO" secondAttribute="top" id="11Q-8u-NV2"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="K3A-Od-Pcz" secondAttribute="bottom" id="FfK-k7-dZn"/>
+                                                                    <constraint firstAttribute="height" constant="20" id="gJk-Iw-tAA"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTK-an-vsf">
+                                                                <rect key="frame" x="0.0" y="20" width="296" height="55"/>
+                                                                <string key="text">Sign up as a Buyer and search for the services providers around you. You can help the Brands to grow by extending their services.</string>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="13"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="HMd-ij-2EO" firstAttribute="top" secondItem="cTs-T1-Vkk" secondAttribute="top" id="P9e-aO-Eo3"/>
+                                                            <constraint firstAttribute="trailing" secondItem="HMd-ij-2EO" secondAttribute="trailing" id="SNv-sP-bel"/>
+                                                            <constraint firstItem="HMd-ij-2EO" firstAttribute="leading" secondItem="cTs-T1-Vkk" secondAttribute="leading" id="hwB-PM-lEV"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQr-QO-nNX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="115"/>
+                                                        <connections>
+                                                            <action selector="tapBuyer:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Gch-z6-9IF"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="cTs-T1-Vkk" firstAttribute="top" secondItem="kS8-ZS-vEK" secondAttribute="top" constant="20" id="1Ql-O7-PST"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gQr-QO-nNX" secondAttribute="bottom" id="5i3-Qu-3Gj"/>
+                                                    <constraint firstItem="cTs-T1-Vkk" firstAttribute="leading" secondItem="kS8-ZS-vEK" secondAttribute="leading" constant="15" id="RDM-n9-d4s"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gQr-QO-nNX" secondAttribute="trailing" id="XFZ-mb-HCd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cTs-T1-Vkk" secondAttribute="bottom" constant="20" id="d53-Gu-nNT"/>
+                                                    <constraint firstItem="gQr-QO-nNX" firstAttribute="leading" secondItem="kS8-ZS-vEK" secondAttribute="leading" id="dz5-Xa-zCn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cTs-T1-Vkk" secondAttribute="trailing" constant="15" id="iFy-7v-MTZ"/>
+                                                    <constraint firstItem="gQr-QO-nNX" firstAttribute="top" secondItem="kS8-ZS-vEK" secondAttribute="top" id="mmQ-r6-yyj"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzB-Jj-tju">
+                                                <rect key="frame" x="0.0" y="130" width="335" height="115"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="qjw-Nu-afu">
+                                                        <rect key="frame" x="15" y="19" width="305" height="77"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ZXl-8J-5n5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="305" height="20"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A BRAND" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIf-Oh-z1X">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="13"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkWhiteSelect" translatesAutoresizingMaskIntoConstraints="NO" id="ntT-mM-MfR">
+                                                                        <rect key="frame" x="285" y="0.0" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="xiV-r4-cov"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="2Kl-SM-TaI"/>
+                                                                    <constraint firstItem="ntT-mM-MfR" firstAttribute="top" secondItem="ZXl-8J-5n5" secondAttribute="top" id="BOs-KJ-Yqb"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="ntT-mM-MfR" secondAttribute="trailing" id="JHW-kg-ROG"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="ntT-mM-MfR" secondAttribute="bottom" id="acK-rC-cdi"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are a Brand you’ll be able to connect with the Buyers you’ve worked for and business you are associated with." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVt-9S-n1s">
+                                                                <rect key="frame" x="0.0" y="20" width="302" height="57"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="13"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ZXl-8J-5n5" firstAttribute="top" secondItem="qjw-Nu-afu" secondAttribute="top" id="R0C-Sl-Sf9"/>
+                                                            <constraint firstItem="ZXl-8J-5n5" firstAttribute="leading" secondItem="qjw-Nu-afu" secondAttribute="leading" id="TNI-nK-e9A"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZXl-8J-5n5" secondAttribute="trailing" id="gvi-hK-Ivy"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Je3-9Q-3Af">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="115"/>
+                                                        <connections>
+                                                            <action selector="tapBrand:" destination="gTV-IL-0wX" eventType="touchUpInside" id="vxv-t3-iJx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Je3-9Q-3Af" firstAttribute="top" secondItem="DzB-Jj-tju" secondAttribute="top" id="0At-AM-WNC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qjw-Nu-afu" secondAttribute="trailing" constant="15" id="0pl-Zf-S4B"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Je3-9Q-3Af" secondAttribute="bottom" id="5V5-bx-mFZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Je3-9Q-3Af" secondAttribute="trailing" id="Gzm-Xq-vKS"/>
+                                                    <constraint firstItem="Je3-9Q-3Af" firstAttribute="leading" secondItem="DzB-Jj-tju" secondAttribute="leading" id="KdU-bH-ZWa"/>
+                                                    <constraint firstItem="qjw-Nu-afu" firstAttribute="leading" secondItem="DzB-Jj-tju" secondAttribute="leading" constant="15" id="Wtn-zK-9id"/>
+                                                    <constraint firstItem="qjw-Nu-afu" firstAttribute="top" secondItem="DzB-Jj-tju" secondAttribute="top" constant="19" id="Zr0-Gb-2f7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qjw-Nu-afu" secondAttribute="bottom" constant="19" id="rwL-k9-6Hn"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wf3-gn-r1e">
+                                                <rect key="frame" x="0.0" y="260" width="335" height="115"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="sPU-KV-7ue">
+                                                        <rect key="frame" x="15" y="19" width="305" height="77"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="6XV-dO-qCx">
+                                                                <rect key="frame" x="0.0" y="0.0" width="305" height="20"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A BUSINESS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMy-VL-9Ji">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="13"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkWhiteSelect" translatesAutoresizingMaskIntoConstraints="NO" id="viG-3t-qTn">
+                                                                        <rect key="frame" x="285" y="0.0" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="q9n-BK-CTd"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="9bg-Na-Ygg"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="viG-3t-qTn" secondAttribute="bottom" id="bf7-RI-Z0d"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="viG-3t-qTn" secondAttribute="trailing" id="fll-xJ-N1c"/>
+                                                                    <constraint firstItem="viG-3t-qTn" firstAttribute="top" secondItem="6XV-dO-qCx" secondAttribute="top" id="vod-uN-WLa"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As a business, you can create and keep a track of all your business locations and the brands that you hire." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBy-Mz-EiQ">
+                                                                <rect key="frame" x="0.0" y="20" width="297" height="57"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="13"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="6XV-dO-qCx" secondAttribute="trailing" id="67B-OJ-SjI"/>
+                                                            <constraint firstItem="6XV-dO-qCx" firstAttribute="leading" secondItem="sPU-KV-7ue" secondAttribute="leading" id="6Nb-EF-fBQ"/>
+                                                            <constraint firstItem="6XV-dO-qCx" firstAttribute="top" secondItem="sPU-KV-7ue" secondAttribute="top" id="tZd-26-tqC"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkK-Ty-rmk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="115"/>
+                                                        <connections>
+                                                            <action selector="tapBusiness:" destination="gTV-IL-0wX" eventType="touchUpInside" id="2Le-b0-A9O"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="gkK-Ty-rmk" secondAttribute="trailing" id="4CO-wy-Mbs"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sPU-KV-7ue" secondAttribute="trailing" constant="15" id="8si-oR-4Ar"/>
+                                                    <constraint firstItem="gkK-Ty-rmk" firstAttribute="leading" secondItem="Wf3-gn-r1e" secondAttribute="leading" id="F6i-ew-aml"/>
+                                                    <constraint firstItem="gkK-Ty-rmk" firstAttribute="top" secondItem="Wf3-gn-r1e" secondAttribute="top" id="KOO-ip-kfD"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sPU-KV-7ue" secondAttribute="bottom" constant="19" id="XpB-Bd-qBQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gkK-Ty-rmk" secondAttribute="bottom" id="ele-XG-0Ez"/>
+                                                    <constraint firstItem="sPU-KV-7ue" firstAttribute="leading" secondItem="Wf3-gn-r1e" secondAttribute="leading" constant="15" id="tNe-a9-D2M"/>
+                                                    <constraint firstItem="sPU-KV-7ue" firstAttribute="top" secondItem="Wf3-gn-r1e" secondAttribute="top" constant="19" id="vuI-qW-KJZ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="375" id="Xgj-6J-LME"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KMp-Eh-qIS">
+                                        <rect key="frame" x="50" y="623" width="236" height="37"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gR-60-zRh">
+                                                <rect key="frame" x="0.0" y="0.0" width="203" height="37"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="25"/>
+                                                <state key="normal" title="Let’s get started"/>
+                                                <connections>
+                                                    <action selector="tapSelectUserType:" destination="gTV-IL-0wX" eventType="touchUpInside" id="1wR-Qm-w4Y"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconWhiteSignin" translatesAutoresizingMaskIntoConstraints="NO" id="3kL-aj-4nq">
+                                                <rect key="frame" x="215" y="0.0" width="21" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap one of the cards to proceed." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcX-oX-EmW">
+                                        <rect key="frame" x="49.5" y="552" width="236" height="37"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="236" id="8mO-Gy-CH8"/>
+                                            <constraint firstAttribute="height" constant="37" id="rbE-X7-rFd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="0.50451144366197187" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DcX-oX-EmW" firstAttribute="centerX" secondItem="80o-f7-N0R" secondAttribute="centerX" id="1L4-6c-8UY"/>
+                                    <constraint firstAttribute="bottom" secondItem="KMp-Eh-qIS" secondAttribute="bottom" constant="-37" id="61N-2R-csv"/>
+                                    <constraint firstItem="TA4-hI-1bO" firstAttribute="top" secondItem="0WL-gm-7R7" secondAttribute="bottom" constant="40" id="8wx-Rt-UJg"/>
+                                    <constraint firstAttribute="trailing" secondItem="0WL-gm-7R7" secondAttribute="trailing" id="Efi-6f-CVS"/>
+                                    <constraint firstAttribute="trailing" secondItem="TA4-hI-1bO" secondAttribute="trailing" id="Ipb-mv-Viw"/>
+                                    <constraint firstAttribute="height" constant="623" id="P6Y-hY-oJG"/>
+                                    <constraint firstItem="0WL-gm-7R7" firstAttribute="leading" secondItem="80o-f7-N0R" secondAttribute="leading" id="VEJ-4B-aM1"/>
+                                    <constraint firstAttribute="bottom" secondItem="DcX-oX-EmW" secondAttribute="bottom" constant="34" id="Vvm-eM-AwZ"/>
+                                    <constraint firstItem="TA4-hI-1bO" firstAttribute="leading" secondItem="80o-f7-N0R" secondAttribute="leading" id="cpw-vz-Q3M"/>
+                                    <constraint firstItem="KMp-Eh-qIS" firstAttribute="centerX" secondItem="80o-f7-N0R" secondAttribute="centerX" id="jwh-dN-w9K"/>
+                                    <constraint firstItem="0WL-gm-7R7" firstAttribute="top" secondItem="80o-f7-N0R" secondAttribute="top" id="yf2-VT-8z4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="80o-f7-N0R" secondAttribute="bottom" id="CC0-Wv-xJm"/>
+                            <constraint firstAttribute="trailing" secondItem="80o-f7-N0R" secondAttribute="trailing" id="XNP-0A-L7Y"/>
+                            <constraint firstItem="80o-f7-N0R" firstAttribute="top" secondItem="osg-Ij-oDp" secondAttribute="top" id="hg1-uW-tm8"/>
+                            <constraint firstItem="80o-f7-N0R" firstAttribute="leading" secondItem="osg-Ij-oDp" secondAttribute="leading" id="hm6-tr-2Rx"/>
+                            <constraint firstItem="80o-f7-N0R" firstAttribute="width" secondItem="osg-Ij-oDp" secondAttribute="width" id="zl4-R0-6rz"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="osg-Ij-oDp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="04Q-YR-NJu"/>
+                <constraint firstItem="V1D-Q8-u6i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="5qa-4w-C5t"/>
+                <constraint firstItem="osg-Ij-oDp" firstAttribute="top" secondItem="V1D-Q8-u6i" secondAttribute="bottom" id="6hA-Bf-jfl"/>
+                <constraint firstAttribute="bottom" secondItem="osg-Ij-oDp" secondAttribute="bottom" id="G6l-pr-ej6"/>
+                <constraint firstAttribute="trailing" secondItem="osg-Ij-oDp" secondAttribute="trailing" constant="20" id="GWM-an-bKY"/>
+                <constraint firstItem="V1D-Q8-u6i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bP8-ms-q0m"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="176" height="225"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="61N-2R-csv" id="NQd-RE-U41"/>
+                <outlet property="bottomProceedConstraint" destination="Vvm-eM-AwZ" id="0aG-e2-sDa"/>
+                <outlet property="imgVIewBrand" destination="ntT-mM-MfR" id="bJV-gY-CD8"/>
+                <outlet property="imgViewBusiness" destination="viG-3t-qTn" id="th5-PD-f16"/>
+                <outlet property="imgViewBuyer" destination="K3A-Od-Pcz" id="BLT-19-oXj"/>
+                <outlet property="lblBrand" destination="KIf-Oh-z1X" id="biZ-gV-UtM"/>
+                <outlet property="lblBrandMsg" destination="GVt-9S-n1s" id="2A0-XK-6iQ"/>
+                <outlet property="lblBusiness" destination="QMy-VL-9Ji" id="kgd-1F-lEs"/>
+                <outlet property="lblBusinessMsg" destination="vBy-Mz-EiQ" id="gmz-IK-kFQ"/>
+                <outlet property="lblBuyer" destination="8fI-if-bp7" id="DpS-ct-KYt"/>
+                <outlet property="lblBuyerMsg" destination="gTK-an-vsf" id="zxf-f4-qyN"/>
+                <outlet property="lblProceed" destination="DcX-oX-EmW" id="Sxo-zy-RF1"/>
+                <outlet property="startStackView" destination="KMp-Eh-qIS" id="Zss-9n-JC9"/>
+                <outlet property="viewBrand" destination="DzB-Jj-tju" id="Lcq-xq-TMV"/>
+                <outlet property="viewBusiness" destination="Wf3-gn-r1e" id="2FP-2A-K4p"/>
+                <outlet property="viewBuyer" destination="kS8-ZS-vEK" id="Kyd-JK-AUW"/>
+            </connections>
+            <point key="canvasLocation" x="209" y="119"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkWhiteSelect" width="12" height="9"/>
+        <image name="iconBackWhite" width="15" height="10"/>
+        <image name="iconWhiteSignin" width="21" height="14"/>
+    </resources>
+</document>

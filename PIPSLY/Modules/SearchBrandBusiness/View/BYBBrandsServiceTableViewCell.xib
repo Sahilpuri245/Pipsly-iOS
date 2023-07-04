@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BYBBrandsServiceTableViewCell" rowHeight="70" id="rn5-QP-4SA" customClass="BYBBrandsServiceTableViewCell" customModule="Pipsly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rn5-QP-4SA" id="iSk-wa-qPf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eVO-uR-OCz">
+                        <rect key="frame" x="0.0" y="5" width="320" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elizabeth Doyle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fO-o9-yi5">
+                                <rect key="frame" x="60" y="8" width="207" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="DZD-Je-m5J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEO-NS-CIj" userLabel="RatingView">
+                                <rect key="frame" x="270" y="8" width="40" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.2 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2t-gM-Our">
+                                        <rect key="frame" x="7" y="5" width="19" height="14"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="HMm-7a-qk5"/>
+                                            <constraint firstAttribute="height" constant="14" id="nQx-eD-b98"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarRating" translatesAutoresizingMaskIntoConstraints="NO" id="wtj-gY-5FM">
+                                        <rect key="frame" x="28" y="9" width="6" height="6"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="6" id="ayF-A8-QU1"/>
+                                            <constraint firstAttribute="height" constant="6" id="su7-IK-p0b"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1137254902" green="0.66666666669999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="e2t-gM-Our" firstAttribute="centerX" secondItem="tEO-NS-CIj" secondAttribute="centerX" constant="-3.5" id="9OG-TA-Hyx"/>
+                                    <constraint firstItem="e2t-gM-Our" firstAttribute="centerY" secondItem="tEO-NS-CIj" secondAttribute="centerY" id="M6V-6N-pb6"/>
+                                    <constraint firstAttribute="bottom" secondItem="wtj-gY-5FM" secondAttribute="bottom" constant="9" id="Pcm-bG-3dX"/>
+                                    <constraint firstAttribute="height" constant="24" id="XPD-Rj-U2B"/>
+                                    <constraint firstAttribute="trailing" secondItem="wtj-gY-5FM" secondAttribute="trailing" constant="6" id="bm5-pp-jJE"/>
+                                    <constraint firstAttribute="width" constant="40" id="dNg-RF-TVY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dU5-W3-ZST">
+                                <rect key="frame" x="5" y="7.5" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="PQQ-CR-HK1"/>
+                                    <constraint firstAttribute="height" constant="45" id="qsT-hK-6FD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parlour Service, Massage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVf-Wc-0nv">
+                                <rect key="frame" x="60" y="29" width="195" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="48l-Dw-qhf"/>
+                                    <constraint firstAttribute="height" constant="14" id="xfc-eT-CuW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔓 Ratings private" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evi-F3-VAi">
+                                <rect key="frame" x="60" y="46" width="195" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Zkd-Ck-QPH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2fO-o9-yi5" firstAttribute="leading" secondItem="dU5-W3-ZST" secondAttribute="trailing" constant="10" id="51Q-la-pgw"/>
+                            <constraint firstItem="dU5-W3-ZST" firstAttribute="centerY" secondItem="eVO-uR-OCz" secondAttribute="centerY" id="AEp-Cg-aVJ"/>
+                            <constraint firstItem="tEO-NS-CIj" firstAttribute="leading" secondItem="2fO-o9-yi5" secondAttribute="trailing" constant="3" id="Lnr-by-ZVy"/>
+                            <constraint firstItem="2fO-o9-yi5" firstAttribute="top" secondItem="eVO-uR-OCz" secondAttribute="top" constant="8" id="Vug-ES-oac"/>
+                            <constraint firstItem="dU5-W3-ZST" firstAttribute="leading" secondItem="eVO-uR-OCz" secondAttribute="leading" constant="5" id="Wdn-a9-UZa"/>
+                            <constraint firstItem="DVf-Wc-0nv" firstAttribute="leading" secondItem="dU5-W3-ZST" secondAttribute="trailing" constant="10" id="bqj-sa-yV8"/>
+                            <constraint firstAttribute="trailing" secondItem="tEO-NS-CIj" secondAttribute="trailing" constant="10" id="h4T-2d-0dd"/>
+                            <constraint firstItem="DVf-Wc-0nv" firstAttribute="top" secondItem="2fO-o9-yi5" secondAttribute="bottom" constant="3" id="hVS-6X-1uJ"/>
+                            <constraint firstAttribute="trailing" secondItem="evi-F3-VAi" secondAttribute="trailing" constant="65" id="qah-Qk-w4i"/>
+                            <constraint firstItem="evi-F3-VAi" firstAttribute="leading" secondItem="dU5-W3-ZST" secondAttribute="trailing" constant="10" id="r4C-kS-9YQ"/>
+                            <constraint firstItem="tEO-NS-CIj" firstAttribute="top" secondItem="eVO-uR-OCz" secondAttribute="top" constant="8" id="v0t-zL-cnp"/>
+                            <constraint firstItem="evi-F3-VAi" firstAttribute="top" secondItem="DVf-Wc-0nv" secondAttribute="bottom" constant="3" id="xQP-MN-Zl6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eVO-uR-OCz" secondAttribute="bottom" constant="5" id="Pgt-qC-8fS"/>
+                    <constraint firstAttribute="trailing" secondItem="eVO-uR-OCz" secondAttribute="trailing" id="ddE-gw-KfX"/>
+                    <constraint firstItem="eVO-uR-OCz" firstAttribute="top" secondItem="iSk-wa-qPf" secondAttribute="top" constant="5" id="etf-1p-z0U"/>
+                    <constraint firstItem="eVO-uR-OCz" firstAttribute="leading" secondItem="iSk-wa-qPf" secondAttribute="leading" id="yWG-W2-Ew4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="eXA-z1-svv"/>
+            <connections>
+                <outlet property="brandImage" destination="dU5-W3-ZST" id="Mb7-bJ-eI0"/>
+                <outlet property="brandNameLabel" destination="2fO-o9-yi5" id="hzC-S7-Fqy"/>
+                <outlet property="brandView" destination="eVO-uR-OCz" id="SXb-KH-nDz"/>
+                <outlet property="iconRatingImage" destination="wtj-gY-5FM" id="1te-H3-nbC"/>
+                <outlet property="ratingLabel" destination="e2t-gM-Our" id="RBj-iV-fNg"/>
+                <outlet property="ratingView" destination="tEO-NS-CIj" id="pv0-Kj-gxc"/>
+                <outlet property="serviceNameLabel" destination="DVf-Wc-0nv" id="Uym-ep-aqB"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="103.44827586206897"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconStarRating" width="6" height="6"/>
+    </resources>
+</document>

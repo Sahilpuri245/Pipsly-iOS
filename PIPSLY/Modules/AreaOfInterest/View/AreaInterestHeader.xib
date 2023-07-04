@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-ExtraBold.otf">
+            <string>Metropolis-ExtraBold</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AreaInterestHeader" customModule="Pipsly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7M-aV-MtQ">
+                    <rect key="frame" x="20" y="10" width="100" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XNn-Co-aYF">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <color key="backgroundColor" red="0.8784313725490196" green="1" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="50"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGh-3z-Zhk">
+                            <rect key="frame" x="50.5" y="50" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Metropolis-ExtraBold" family="Metropolis" pointSize="28"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.80784313730000001" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconEditProfile" translatesAutoresizingMaskIntoConstraints="NO" id="dY0-06-zRe">
+                            <rect key="frame" x="70" y="74" width="27" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="TQ5-3I-e4z"/>
+                                <constraint firstAttribute="width" constant="27" id="kOn-zm-viX"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMF-xZ-cmR">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <connections>
+                                <action selector="tapUpdateProfileImage:" destination="iN0-l3-epB" eventType="touchUpInside" id="9di-DT-hWu"/>
+                            </connections>
+                        </button>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="D0c-IY-vGO">
+                            <rect key="frame" x="40" y="40" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TMF-xZ-cmR" secondAttribute="trailing" id="2SL-9k-svi"/>
+                        <constraint firstItem="XNn-Co-aYF" firstAttribute="leading" secondItem="o7M-aV-MtQ" secondAttribute="leading" id="58y-YV-sPv"/>
+                        <constraint firstAttribute="width" constant="100" id="5NR-l2-1Xh"/>
+                        <constraint firstAttribute="height" constant="100" id="7qu-XU-c3q"/>
+                        <constraint firstAttribute="bottom" secondItem="TMF-xZ-cmR" secondAttribute="bottom" id="DRf-ZQ-Kqa"/>
+                        <constraint firstItem="XNn-Co-aYF" firstAttribute="top" secondItem="o7M-aV-MtQ" secondAttribute="top" id="I5n-jm-PyX"/>
+                        <constraint firstItem="D0c-IY-vGO" firstAttribute="centerY" secondItem="o7M-aV-MtQ" secondAttribute="centerY" id="IUV-7H-cpa"/>
+                        <constraint firstAttribute="trailing" secondItem="dY0-06-zRe" secondAttribute="trailing" constant="3" id="JRE-UU-Qan"/>
+                        <constraint firstItem="TMF-xZ-cmR" firstAttribute="top" secondItem="o7M-aV-MtQ" secondAttribute="top" id="JZL-o9-epY"/>
+                        <constraint firstAttribute="trailing" secondItem="XNn-Co-aYF" secondAttribute="trailing" id="KmK-3e-K2A"/>
+                        <constraint firstItem="D0c-IY-vGO" firstAttribute="centerX" secondItem="o7M-aV-MtQ" secondAttribute="centerX" id="L73-Cn-U3f"/>
+                        <constraint firstItem="eGh-3z-Zhk" firstAttribute="centerX" secondItem="o7M-aV-MtQ" secondAttribute="centerX" id="RVx-kN-zdg"/>
+                        <constraint firstAttribute="bottom" secondItem="XNn-Co-aYF" secondAttribute="bottom" id="T4Q-43-Jmv"/>
+                        <constraint firstAttribute="bottom" secondItem="dY0-06-zRe" secondAttribute="bottom" constant="-1" id="UwQ-2z-q7o"/>
+                        <constraint firstItem="TMF-xZ-cmR" firstAttribute="leading" secondItem="o7M-aV-MtQ" secondAttribute="leading" id="jga-1e-vhq"/>
+                        <constraint firstItem="eGh-3z-Zhk" firstAttribute="centerY" secondItem="o7M-aV-MtQ" secondAttribute="centerY" id="xhJ-GY-y9L"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-D2-vYu">
+                    <rect key="frame" x="20" y="130" width="337" height="92"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Francis! Thank you for creating a Pipsly account." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNl-Yh-xkD">
+                            <rect key="frame" x="0.0" y="0.0" width="337" height="36"/>
+                            <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can choose your areas of interest so we could search for the appropriate service providers around you to connect with." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlU-R7-BCM">
+                            <rect key="frame" x="0.0" y="47" width="337" height="45"/>
+                            <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QOe-D2-vYu" firstAttribute="top" secondItem="o7M-aV-MtQ" secondAttribute="bottom" constant="20" id="SLq-5Z-IXZ"/>
+                <constraint firstAttribute="trailing" secondItem="QOe-D2-vYu" secondAttribute="trailing" constant="18" id="gbL-tO-ikC"/>
+                <constraint firstItem="o7M-aV-MtQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="mhQ-uQ-DZe"/>
+                <constraint firstItem="QOe-D2-vYu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="vO4-6n-K3s"/>
+                <constraint firstItem="o7M-aV-MtQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="zKv-e4-BSS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="activityIndicator" destination="D0c-IY-vGO" id="juO-yc-k2y"/>
+                <outlet property="imgViewProfile" destination="XNn-Co-aYF" id="5tJ-ci-54l"/>
+                <outlet property="lblMsg" destination="mlU-R7-BCM" id="LzU-na-Mih"/>
+                <outlet property="lblName" destination="eGh-3z-Zhk" id="HRH-nd-LuR"/>
+                <outlet property="lblTitle" destination="dNl-Yh-xkD" id="hPz-ES-12T"/>
+            </connections>
+            <point key="canvasLocation" x="65.5" y="-86.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconEditProfile" width="27" height="27"/>
+    </resources>
+</document>

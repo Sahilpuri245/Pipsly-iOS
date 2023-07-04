@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlaceholderView" customModule="PIPSLY" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="502"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zNq-Zd-pdl">
+                    <rect key="frame" x="34" y="187" width="307" height="128"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noBrandsIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="fwJ-yH-757">
+                            <rect key="frame" x="114" y="0.0" width="79" height="51"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Lzc-ED-QDG">
+                            <rect key="frame" x="12" y="71" width="283.5" height="57"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Brands available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akL-9W-WiI">
+                                    <rect key="frame" x="63" y="0.0" width="157.5" height="16"/>
+                                    <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We’re trying to connect with some top Brands in your area. Maybe you can look for some other specialization later." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWF-ra-PWX">
+                                    <rect key="frame" x="0.0" y="21" width="283.5" height="36"/>
+                                    <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zNq-Zd-pdl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="34" id="WzM-O3-WKZ"/>
+                <constraint firstItem="zNq-Zd-pdl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="erv-UG-HyM"/>
+                <constraint firstItem="zNq-Zd-pdl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iJ8-a7-adQ"/>
+                <constraint firstAttribute="trailing" secondItem="zNq-Zd-pdl" secondAttribute="trailing" constant="34" id="see-bY-S8c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgView" destination="fwJ-yH-757" id="rUs-IX-feZ"/>
+                <outlet property="lblMsg" destination="cWF-ra-PWX" id="lBf-4k-U7f"/>
+                <outlet property="lblTitle" destination="akL-9W-WiI" id="nDj-xb-lrY"/>
+            </connections>
+            <point key="canvasLocation" x="-1066" y="-279"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noBrandsIllustration" width="79" height="51"/>
+    </resources>
+</document>

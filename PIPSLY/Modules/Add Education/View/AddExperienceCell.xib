@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddExperienceCell" id="KGk-i7-Jjw" customClass="AddExperienceCell" customModule="Pipsly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJ9-Av-aqR">
+                        <rect key="frame" x="20" y="0.0" width="335" height="46"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0h7-rm-wuc">
+                        <rect key="frame" x="20" y="0.0" width="335" height="55.5"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlw-wU-wCG">
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="46"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="140" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Start year?" image="iconCalendar">
+                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhS-tB-fcX">
+                                <rect key="frame" x="172" y="0.0" width="163" height="46"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="140" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="End year?" image="iconCalendar">
+                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vlw-wU-wCG" firstAttribute="leading" secondItem="0h7-rm-wuc" secondAttribute="leading" id="00d-ia-agU"/>
+                            <constraint firstItem="Vlw-wU-wCG" firstAttribute="top" secondItem="0h7-rm-wuc" secondAttribute="top" id="Hyj-qb-9lS"/>
+                            <constraint firstAttribute="trailing" secondItem="BhS-tB-fcX" secondAttribute="trailing" id="Ju0-6k-Ug1"/>
+                            <constraint firstAttribute="bottom" secondItem="BhS-tB-fcX" secondAttribute="bottom" constant="9.5" id="Ks3-g5-irf"/>
+                            <constraint firstAttribute="bottom" secondItem="Vlw-wU-wCG" secondAttribute="bottom" constant="9.5" id="iNF-4S-ngG"/>
+                            <constraint firstItem="BhS-tB-fcX" firstAttribute="top" secondItem="0h7-rm-wuc" secondAttribute="top" id="nbA-DY-f34"/>
+                            <constraint firstItem="BhS-tB-fcX" firstAttribute="leading" secondItem="Vlw-wU-wCG" secondAttribute="trailing" constant="9" id="nrW-4p-uy1"/>
+                            <constraint firstItem="Vlw-wU-wCG" firstAttribute="width" secondItem="0h7-rm-wuc" secondAttribute="width" multiplier="0.5" constant="-4.5" id="vgc-b9-BZk"/>
+                        </constraints>
+                    </view>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-O3-FW8">
+                        <rect key="frame" x="50" y="55.5" width="275" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="WxO-hH-1DO"/>
+                        </constraints>
+                    </pickerView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SJ9-Av-aqR" secondAttribute="bottom" constant="9.5" id="0b5-cZ-uqF"/>
+                    <constraint firstAttribute="trailing" secondItem="SJ9-Av-aqR" secondAttribute="trailing" constant="20" id="3rD-fw-jwk"/>
+                    <constraint firstItem="SJ9-Av-aqR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9nC-Br-Ldu"/>
+                    <constraint firstItem="0h7-rm-wuc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KMY-Aw-9du"/>
+                    <constraint firstAttribute="bottom" secondItem="k4H-O3-FW8" secondAttribute="bottom" id="P1x-zF-NdY"/>
+                    <constraint firstAttribute="trailing" secondItem="0h7-rm-wuc" secondAttribute="trailing" constant="20" id="PNt-p9-QCI"/>
+                    <constraint firstAttribute="trailing" secondItem="k4H-O3-FW8" secondAttribute="trailing" constant="50" id="YYM-bB-e7V"/>
+                    <constraint firstItem="k4H-O3-FW8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="bCd-ZA-Vke"/>
+                    <constraint firstItem="SJ9-Av-aqR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jSh-Ks-udx"/>
+                    <constraint firstItem="k4H-O3-FW8" firstAttribute="top" secondItem="0h7-rm-wuc" secondAttribute="bottom" id="l3p-Q1-pfX"/>
+                    <constraint firstItem="0h7-rm-wuc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zua-bD-SLh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateView" destination="0h7-rm-wuc" id="3MW-E2-vbb"/>
+                <outlet property="endDateBtn" destination="BhS-tB-fcX" id="dzC-Sg-8XG"/>
+                <outlet property="pickerHeightConstraint" destination="WxO-hH-1DO" id="geg-hd-yo6"/>
+                <outlet property="pickerView" destination="k4H-O3-FW8" id="xtL-BA-HpE"/>
+                <outlet property="startDateBtn" destination="Vlw-wU-wCG" id="v0y-iN-Xuu"/>
+                <outlet property="txtField" destination="SJ9-Av-aqR" id="LAe-fZ-3XR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconCalendar" width="13" height="14"/>
+    </resources>
+</document>
